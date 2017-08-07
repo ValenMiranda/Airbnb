@@ -20276,7 +20276,7 @@ $(document).ready(function() {
 			console.log(cantHuesped);
 			console.log(puntuacion);
 			console.log(descripcion);
-			$(".contenedor").append("<li><div class='img-lugar'><img src='"+img+"'></div><div class='precio'><p class='precio'>"+precio+"</p><div><div class='imgUser'><img src='"+imgUser+"'><div class='descripcion'><p class='description-txt'>"+descripcion+"</p></li>");
+			$(".contenedor").append("<li><div class='img-lugar'><img src='"+img+"' alt=''></div><div class='precio'><p class='usd'>"+usd+"</p><p class='precio-txt'>"+precio+"</p></div><div class='imgUser'><img src='"+imgUser+"' alt=''></div><div class='descripcion'><p class='descripcion-txt'>"+descripcion+"</p></div><p class='tipoPieza'>"+tipoPieza+"</p><p class='huesped'>"+cantHuesped+"</p><div class='estrellas'>"+puntuacion+"</div></li>");
 		})
 	})
 	

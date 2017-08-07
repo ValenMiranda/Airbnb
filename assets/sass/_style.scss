@@ -7,3 +7,24 @@
 	column-count:2;
 	column-gap:20px;
 }
+
+.img-lugar img{
+	width: 95%;
+}
+
+.precio{
+    background-color: rgba(0, 0, 0, 0.69);
+    position: relative;
+    top: -80px;
+    width: 49%;
+    display: flex;
+    .usd{
+    	color:white;
+    	margin-left: 6%;
+    	font-size: 11px;
+    }
+	.precio-txt{
+		color:white;
+		margin-left:5%;
+	}
+}

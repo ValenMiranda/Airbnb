@@ -1,5 +1,5 @@
-### Airbnb
-## Sprint 7
+# Airbnb
+### Sprint 7
 
 ### Requerimientos Técnicos
 

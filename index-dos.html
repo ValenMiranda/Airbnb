@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Airbnb</title>
 	<link rel="stylesheet" href="dist/css/style.min.css">
+
 </head>
 <body>
 <section class="general">
@@ -23,13 +24,15 @@
 				</div>
 			</div>
 			<div class="col m4">
-				<div id="mapa"></div>
+				<div id="map"></div>
 			</div>
 		</div>
 	</div>
 </section>
 <script src="dist/js/script.js"></script>
- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC41Wk3y4D4jrDMm-E-_yGZk1iuL2vurBs&callback=map"></script>
+
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC41Wk3y4D4jrDMm-E-_yGZk1iuL2vurBs&callback=initMap"
+    async defer></script>
 	
 </body>
 </html>

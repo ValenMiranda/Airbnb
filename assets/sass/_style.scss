@@ -103,3 +103,29 @@ nav{
 }
 
 /* FIN ESTILOS MAQUETA JSON */
+
+/* INICIO FOOTER */
+.page-footer {
+	.container{
+		width: 77%;
+	}
+	background-color: #fff;
+	.footer-copyright{
+		background-color: #fff;
+	}
+	box-links{
+		margin-left: 40px;
+		.h5.grey-text.text-darken-2{
+			font-weight:normal;
+			font-size: 15px;
+		}
+	}
+	.fa{
+		margin-left: 15px;
+	}
+	span.text.copy{
+		margin-bottom: 10px;
+	}
+}
+
+/* FIN FOOTER*/

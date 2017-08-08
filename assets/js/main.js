@@ -13,19 +13,21 @@ $(document).ready(function() {
 			var cantHuesped = ele.listing.person_capacity;
 			var puntuacion = ele.listing.star_rating;
 			var descripcion = ele.listing.name;
+			var id= ele.listing.id;
 			//Condición para mostrar la cantidad de estrellas
 			if(puntuacion != 5){
 				$(".estrellas").append("<i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i>")
 			}
-			console.log(img);
-			console.log(precio);
-			console.log(usd);
-			console.log(imgUser);
-			console.log(tipoPieza);
-			console.log(cantHuesped);
-			console.log(puntuacion);
-			console.log(descripcion);
-			$(".contenedor").append("<li><div class='img-lugar'><img src='"+img+"' alt=''></div><div class='precio'><p class='usd'>"+usd+"</p><p class='precio-txt'>"+precio+"</p><p class='mes-txt'>Por mes</p></div><div class='imgUser'><img src='"+imgUser+"' alt=''></div><div class='descripcion'><p class='descripcion-txt'>"+descripcion+"</div><div class='txt-bajada'><p>"+tipoPieza+"·"+cantHuesped+" huéspedes "+"</p></div><div class='estrellas'></div></li>");
+			//console.log(img);
+			//console.log(precio);
+			//console.log(usd);
+			//console.log(imgUser);
+			//console.log(tipoPieza);
+			//console.log(cantHuesped);
+			//console.log(puntuacion);
+			//console.log(descripcion);
+			console.log(id);
+			$(".contenedor").append("<li><div class='img-lugar' id='"+id+"'><img src='"+img+"' alt=''></div><div class='precio'><p class='usd'>"+usd+"</p><p class='precio-txt'>"+precio+"</p><p class='mes-txt'>Por mes</p></div><div class='imgUser'><img src='"+imgUser+"' alt=''></div><div class='descripcion'><p class='descripcion-txt'>"+descripcion+"</div><div class='txt-bajada'><p>"+tipoPieza+"·"+cantHuesped+" huéspedes "+"</p></div><div class='estrellas'></div></li>");
 		});
 	});
 	

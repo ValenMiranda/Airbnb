@@ -73,4 +73,16 @@
 	}
 }
 
+.page-footer, .pagination li.active {
+    background-color: #ffffff;
+}
+
+.pagination li.active a {
+    color: #444;
+}
+
+.pagination li{
+	box-shadow: 5px 5px 15px rgb(236, 236, 236);
+}
+
 /* FIN ESTILOS MAQUETA JSON */

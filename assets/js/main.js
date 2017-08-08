@@ -1,3 +1,4 @@
+/*JS PARA MAQUETA JSON ANTONIA */
 $(document).ready(function() {
 	res.forEach(function(e){
 		console.log(e);
@@ -29,3 +30,5 @@ $(document).ready(function() {
 	});
 	
 });
+
+/* FIN JS PARA MAQUETA JSON ANTONIA */

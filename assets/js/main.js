@@ -11,7 +11,16 @@ $(document).ready(function() {
 
     $('select').material_select();
 
-    $("#example_id").ionRangeSlider();
+    $("#example_id").ionRangeSlider({
+    min: 150,
+    max: 15000,
+    from: 500,
+    to: 150000,
+    type: 'double',
+    prefix: "$",
+    grid: true,
+    grid_num: 10
+});
      
 
   });

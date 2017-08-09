@@ -6,12 +6,6 @@
 	<script src="https://use.fontawesome.com/8128449ca8.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="dist/css/style.min.css">
-	<script src="https://use.fontawesome.com/8128449ca8.js"></script>
-	<!-- .calentim includes -->
-	<link href="build/css/calentim.min.css" rel="stylesheet"/>
-	<script src="build/js/moment.min.js"></script>
-	<script src="build/js/calentim.min.js"></script>
-	<!-- .end calentim includes -->
 </head>
 <body>
 	<!--  INICIO NAV -->
@@ -609,6 +603,28 @@
 
 	<!-- AQUÍ TERMINA LA PRIMERA PARTE DEL FILTRO -->
 </section>
+      <section class="general">
+	<div class="container">
+		<div class="row">
+			<div class="col m8">
+				<div class="row"></div>
+				<div class="row"></div>
+				<div class="row"></div>
+				<div class="row"></div>
+				<div class="row"></div>
+				<div class="row">
+					<div class="col m6 center-align">
+						<div class="alojamiento"></div>
+					</div>
+					<div class="col m6 center-align"></div>
+				</div>
+			</div>
+			<div class="col m4">
+				<div id="map"></div>
+			</div>
+		</div>
+	</div>
+</section>
 <!-- INICIO FOOTER -->
 	<footer class="page-footer">
 		<div class="container">
@@ -729,6 +745,16 @@
 </footer>
 <!-- FIN FOOTER -->
 
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC41Wk3y4D4jrDMm-E-_yGZk1iuL2vurBs&libraries=places&callback=initialize"
+    async defer></script>
+	
+	<script src="https://use.fontawesome.com/8128449ca8.js"></script>
+	<!-- .calentim includes -->
+	<link href="build/css/calentim.min.css" rel="stylesheet"/>
+	<script src="build/js/moment.min.js"></script>
+	<script src="build/js/calentim.min.js"></script>
+	<!-- .end calentim includes -->
 <script src="dist/js/script.js"></script>
+
 </body>
 </html>

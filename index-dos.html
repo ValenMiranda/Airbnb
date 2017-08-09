@@ -4,8 +4,116 @@
 	<meta charset="UTF-8">
 	<title>Airbnb</title>
 	<link rel="stylesheet" href="dist/css/style.min.css">
+	<script src="https://use.fontawesome.com/8128449ca8.js"></script>
+	<!-- .calentim includes -->
+	<link href="build/css/calentim.min.css" rel="stylesheet"/>
+	<script src="build/js/moment.min.js"></script>
+	<script src="build/js/calentim.min.js"></script>
+	<!-- .end calentim includes -->
 </head>
 <body>
+	<section class="general">
+	<div class="container-fluid">
+		<div class="row fila">
+			<div class="col m8">
+				<div class="row fila">
+					<div class="col s3 m3 l3">
+						<h6 class='titulo-fecha'>Fechas</h6>
+					</div>
+					<div class="col s3 m3 l3 input">
+						<input type="text" class="datepicker">
+					</div>
+					<div class="col s3 m3 l3 input">
+						<input type="text" class="datepicker">
+					</div>
+					<div class="input-field col s3 m3 l3 input" style="margin-top: 0px">
+    						<select>
+      							<option value="" disabled selected>Choose your option</option>
+      							<option value="1">2 huéspedes</option>
+      							<option value="2">Option 2</option>
+      							<option value="3">Option 3</option>
+    						</select>
+  					</div>
+  				</div>
+  				<div class="divider"></div>
+				<div class="row fila">
+					<div class="col s3 m3 l3">
+						<h6>Tipo de habitación</h6>
+					</div>
+					<div class="col s3 m3 l3 cuadro">
+						<form class='opciones' action="#">
+    						<p>
+    							<input type="checkbox" id="test1" />
+    							<label for="test1" class='fa'><i class="fa fa-home" aria-hidden="true"></i> Casa entera</label>
+      							
+    						</p>
+    					</form>
+					</div>
+					<div class="col s3 m3 l3 cuadro">
+						<form action="#">
+    						<p class='fa'>
+    							<input type="checkbox" id="test2" />
+    							<label for="test2" class='fa opciones'><i class="fa fa-user" aria-hidden="true"></i> Habitación <br class='opciones'> privada</label>
+      							
+    						</p>
+    					</form>
+					</div>
+					<div class="col s3 m3 l3 cuadro">
+						<form class='opciones' action="#">
+    						<p class='fa'>
+    							<input type="checkbox" id="test3" />
+    							<label for="test3" class='fa'><i class="fa fa-users" aria-hidden="true"></i> Habitación <br> compartida</label>
+      							
+    						</p>
+    					</form>
+  					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row fila">
+					<div class="col s3 m3 l3">
+						<h6>Rango de precios</h6>
+					</div>
+					<div class="col s9 m9 l9">
+						<div id="test-slider"></div>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row fila">
+					<div class="col s3 m3 l3">
+						<h6>Reserva inmediata</h6>
+					</div>
+					<div class="col s6 m6 l6">
+						<h6>Anuncios que no requieren que el anfitrión acepte la solicitud</h6>
+					</div>
+					<div class="col s3 m3 l3">
+						<div class="switch">
+    						<label>
+      							Off
+      							<input type="checkbox">
+      							<span class="lever"></span>
+      							On
+    						</label>
+  						</div>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row fila">
+					<div class="col s3 m3 l3">
+						<a class="waves-effect waves-light btn">Filtros</a>
+					</div>
+				</div>
+				<div class="row fila">
+					<div class="col m6 center-align">
+						<div class="alojamiento"></div>
+					</div>
+					<div class="col m6 center-align"></div>
+				</div>
+			</div>
+			<div class="col m4"></div>
+		</div>
+	</div>
+	</section>
+	
 	<script src="dist/js/script.js"></script>
 </body>
 </html>

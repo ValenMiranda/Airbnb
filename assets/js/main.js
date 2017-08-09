@@ -25,7 +25,22 @@ $(document).ready(function() {
 			var camas = ele.listing.beds;
 			
 			/*$(".contenedor").append("<li><div class='img-lugar' id='"+id+"'><img src='"+img+"' alt=''></div><a href='#nowhere' ><i class='fa fa-heart-o' aria-hidden='true'></i></a><div class='precio'><p class='usd'>"+usd+"</p><p class='precio-txt'>"+precio+"</p><p class='mes-txt'>Por mes</p></div><div class='imgUser'><img src='"+imgUser+"' alt=''></div><div class='descripcion'><p class='descripcion-txt'>"+descripcion+"</div><div class='txt-bajada'><p>"+tipoPieza+"·"+cantHuesped+" huéspedes "+"</p></div><div class='estrellas'></div></li>");*/
-
+			$("#test1").on( 'change', function() {
+			   if( $(this).is(':checked') ) {
+			       $(".contenedor").append("<li><div class='img-lugar' id='"+id+"'><img src='"+img+"' alt=''></div><a href='#nowhere' ><i class='fa fa-heart-o' aria-hidden='true'></i></a><div class='precio'><p class='usd'>"+usd+"</p><p class='precio-txt'>"+precio+"</p><p class='mes-txt'>Por mes</p></div><div class='imgUser'><img src='"+imgUser+"' alt=''></div><div class='descripcion'><p class='descripcion-txt'>"+descripcion+"</div><div class='txt-bajada'><p>"+tipoPieza+"·"+cantHuesped+" huéspedes "+"</p></div><div class='estrellas'></div></li>");
+			       $(".fa-heart-o").click(function(){
+						$(this).css('color', 'tomato');
+					});
+					//Condición para mostrar la cantidad de estrellas
+					if(puntuacion != 5){
+						$(".estrellas").append("<i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i>")
+					}
+			       console.log("El checkbox con valor " + $(this).val() + " ha sido seleccionado");
+			   } else {
+			       // Hacer algo si el checkbox ha sido deseleccionado
+			       console.log("El checkbox con valor " + $(this).val() + " ha sido deseleccionado");
+			   }
+			});
 			//Info que obtengo de los select
 			
 			$("#aplicarFiltros").click(function(){

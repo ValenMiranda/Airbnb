@@ -30,7 +30,13 @@ $(document).ready(function() {
 
 /*Aquí termina el JS de la primera parte del filtro*/
 
+//INICIO SLIDE//
+    $(document).ready(function(){
+      $('.carousel').carousel();
+    });
+        
 
+//FIN SLIDE//
 
 //INICIO SECCION FILTRO DOS//
 $(document).ready(function(){ 

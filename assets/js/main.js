@@ -1,23 +1,16 @@
-
-
-//INICIO SECCION FILTRO DOS//
-$(document).ready(function(){ 
-   $('#mostrar').on('click',function(){
-      $('.filtrodos').toggle(500);
-   });
-});
-
-
-
-//FIN SECCION FILTRO DOS//
-
 /*JS PARA MAQUETA JSON ANTONIA */
 $(document).ready(function() {
+	//INICIO SECCION FILTRO DOS//
+
+	   $('#mostrar').on('click',function(){
+	      $('.filtrodos').toggle(500);
+	   });
+	//FIN SECCION FILTRO DOS//
 	res.forEach(function(e){
 		//console.log(e);
 		var json = e.search_results;
 		json.forEach(function(ele){
-			//console.log(ele);
+			console.log(ele);
 			var img = ele.listing.thumbnail_url;
 			var precio = ele.pricing_quote.rate.amount;
 			var usd = ele.pricing_quote.rate.currency;

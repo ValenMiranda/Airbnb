@@ -11,5 +11,8 @@ $(document).ready(function() {
 
     $('select').material_select();
 
+    $("#example_id").ionRangeSlider();
+     
+
   });
 

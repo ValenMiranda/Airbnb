@@ -1,3 +1,5 @@
+/*Aquí está el JS de la primera parte del filtro*/
+
 $(document).ready(function() {
 
  	  $('.datepicker').pickadate({
@@ -25,3 +27,4 @@ $(document).ready(function() {
 
   });
 
+/*Aquí termina el JS de la primera parte del filtro*/

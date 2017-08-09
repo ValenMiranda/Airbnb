@@ -1,3 +1,4 @@
+
 /*INICIO FILTRO DOS*/
 .botonflitrodos{
 	.btn{
@@ -17,3 +18,136 @@
 }
 
 /*FIN FILTRO DOS*/
+
+*{
+	margin:0;
+	padding:0;
+}
+/* INICIO NAV*/
+nav{
+	.brand-logo{
+		margin-left: 25px;
+	}
+}
+/* FIN NAV*/
+
+/* ESTILOS MAQUETA JSON ANTONIA */
+.contenedor{
+	column-count:2;
+	column-gap:20px;
+	li{
+		height: 311px;
+	}
+}
+
+.img-lugar img{
+	width: 95%;
+}
+.fa-heart-o{
+	position: relative;
+	top: -176px;
+    left: 81%;
+    color: #fff;
+    font-size: 25px;
+    background-color: rgba(86, 86, 86, 0.28);
+    border-radius: 112%;
+}
+.precio{
+    background-color: rgba(0, 0, 0, 0.69);
+    position: relative;
+    top: -80px;
+    width: 49%;
+    display: flex;
+    .usd{
+    	color:white;
+    	margin-left: 6%;
+    	font-size: 11px;
+    }
+	.precio-txt{
+		color:white;
+		margin-left:5%;
+	}
+	.mes-txt{
+		color: white;
+	    font-weight: 100;
+	    margin-left: 6%;
+	}
+}
+
+.imgUser {
+	position: relative;
+	left: 75%;
+    top: -85px;
+    margin-bottom: -26px;
+    img{
+		border-radius: 50%;
+	    width: 18%;
+	    border: 2px solid white;
+	}
+}
+
+.descripcion{
+	position: relative;
+    top: -53px;
+    .descripcion-txt{
+    	color: #524e4e;
+    }
+}
+
+.txt-bajada{
+    	font-weight: 100;
+    	font-size: 12px;
+    	position: relative;
+    	top: -50px;
+}
+
+.estrellas{
+	position: relative;
+    top: -68px;
+    left: 60%;
+	.fa-star{
+		color: rgb(140, 190, 236);
+    	font-size: 19px;
+	}
+}
+
+.page-footer, .pagination li.active {
+    background-color: #ffffff;
+}
+
+.pagination li.active a {
+    color: #444;
+}
+
+.pagination li{
+	box-shadow: 5px 5px 15px rgb(236, 236, 236);
+}
+
+/* FIN ESTILOS MAQUETA JSON */
+
+/* INICIO FOOTER */
+.page-footer {
+	.container{
+		width: 77%;
+	}
+	background-color: #fff;
+	.footer-copyright{
+		background-color: #fff;
+	}
+	box-links{
+		margin-left: 40px;
+		.h5.grey-text.text-darken-2{
+			font-weight:normal;
+			font-size: 15px;
+		}
+	}
+	.fa{
+		margin-left: 15px;
+	}
+	span.text.copy{
+		margin-bottom: 10px;
+	}
+}
+
+/* FIN FOOTER*/
+

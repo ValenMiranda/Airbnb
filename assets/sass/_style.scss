@@ -106,11 +106,15 @@ nav{
 
 /* INICIO SLIDE*/
 
-.carousel .carousel-item>img {
-		width:200%;
-		margin-left:-60%;
+.carousel{
+	margin-bottom: 80px;
+	.carousel-item{
+		img{
+			width:200%;
+			margin-left:-60%;
+		}
+	}
 }
-
 /* FIN SLIDE*/
 
 

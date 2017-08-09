@@ -33,7 +33,7 @@ function initialize() {
 
 $(document).ready(function() {
 
- 	  $('.datepicker').pickadate({
+ $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
     selectYears: 15, // Creates a dropdown of 15 years to control year,
     today: 'Today',
@@ -45,50 +45,25 @@ $(document).ready(function() {
     $('select').material_select();
 
     $("#example_id").ionRangeSlider({
-    min: 150,
-    max: 15000,
-    from: 500,
-    to: 150000,
-    type: 'double',
-    prefix: "$",
-    grid: true,
-    grid_num: 10
-});
-     
+	    min: 150,
+	    max: 15000,
+	    from: 500,
+	    to: 150000,
+	    type: 'double',
+	    prefix: "$",
+	    grid: true,
+	    grid_num: 10
+	});
+	
+	//INICIO SLIDE//
+     $('.carousel').carousel();
+     //SECCION FILTROS
+    $('#mostrar').on('click',function(){
+      	$('.filtrodos').toggle(500);
+  	});
 
-  });
-
-/*Aquí termina el JS de la primera parte del filtro*/
-
-//INICIO SLIDE//
-    $(document).ready(function(){
-      $('.carousel').carousel();
-    });
-        
-
-//FIN SLIDE//
-
-//INICIO SECCION FILTRO DOS//
-$(document).ready(function(){ 
-   $('#mostrar').on('click',function(){
-      $('.filtrodos').toggle(500);
-   });
-});
-
-
-
-//FIN SECCION FILTRO DOS//
-
-
-/*JS PARA MAQUETA JSON ANTONIA */
-$(document).ready(function() {
-	//INICIO SECCION FILTRO DOS//
-
-	   $('#mostrar').on('click',function(){
-	      $('.filtrodos').toggle(500);
-	   });
-	//FIN SECCION FILTRO DOS//
-	res.forEach(function(e){
+      //JSON
+      res.forEach(function(e){
 		//console.log(e);
 		var json = e.search_results;
 		json.forEach(function(ele){
@@ -106,7 +81,7 @@ $(document).ready(function() {
 			var habit = ele.listing.bathrooms;
 			var camas = ele.listing.beds;
 			
-			/*$(".contenedor").append("<li><div class='img-lugar' id='"+id+"'><img src='"+img+"' alt=''></div><a href='#nowhere' ><i class='fa fa-heart-o' aria-hidden='true'></i></a><div class='precio'><p class='usd'>"+usd+"</p><p class='precio-txt'>"+precio+"</p><p class='mes-txt'>Por mes</p></div><div class='imgUser'><img src='"+imgUser+"' alt=''></div><div class='descripcion'><p class='descripcion-txt'>"+descripcion+"</div><div class='txt-bajada'><p>"+tipoPieza+"·"+cantHuesped+" huéspedes "+"</p></div><div class='estrellas'></div></li>");*/
+			
 			$("#test1").on( 'change', function() {
 			   if( $(this).is(':checked') ) {
 			       $(".contenedor").append("<li><div class='img-lugar' id='"+id+"'><img src='"+img+"' alt=''></div><a href='#nowhere' ><i class='fa fa-heart-o' aria-hidden='true'></i></a><div class='precio'><p class='usd'>"+usd+"</p><p class='precio-txt'>"+precio+"</p><p class='mes-txt'>Por mes</p></div><div class='imgUser'><img src='"+imgUser+"' alt=''></div><div class='descripcion'><p class='descripcion-txt'>"+descripcion+"</div><div class='txt-bajada'><p>"+tipoPieza+"·"+cantHuesped+" huéspedes "+"</p></div><div class='estrellas'></div></li>");
@@ -146,12 +121,6 @@ $(document).ready(function() {
 			})
 		});
 	});
-
-	
-	
 });
-
-/* FIN JS PARA MAQUETA JSON ANTONIA */
-
 
 

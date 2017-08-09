@@ -20270,10 +20270,16 @@ $(document).ready(function() {
 			var puntuacion = ele.listing.star_rating;
 			var descripcion = ele.listing.name;
 			var id= ele.listing.id;
+			var bano = ele.listing.bathrooms;
+			var habit = ele.listing.bathrooms;
+			var camas = ele.listing.beds;
 			//Condición para mostrar la cantidad de estrellas
 			if(puntuacion != 5){
 				$(".estrellas").append("<i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i><i class='fa fa-star' aria-hidden='true'></i>")
 			}
+			console.log(bano);
+			console.log(habit);
+			console.log(camas);
 			//console.log(img);
 			//console.log(precio);
 			//console.log(usd);
@@ -20282,7 +20288,7 @@ $(document).ready(function() {
 			//console.log(cantHuesped);
 			//console.log(puntuacion);
 			//console.log(descripcion);
-			console.log(id);
+			//console.log(id);
 			$(".contenedor").append("<li><div class='img-lugar' id='"+id+"'><img src='"+img+"' alt=''></div><a href='#nowhere' ><i class='fa fa-heart-o' aria-hidden='true'></i></a><div class='precio'><p class='usd'>"+usd+"</p><p class='precio-txt'>"+precio+"</p><p class='mes-txt'>Por mes</p></div><div class='imgUser'><img src='"+imgUser+"' alt=''></div><div class='descripcion'><p class='descripcion-txt'>"+descripcion+"</div><div class='txt-bajada'><p>"+tipoPieza+"·"+cantHuesped+" huéspedes "+"</p></div><div class='estrellas'></div></li>");
 			$(".fa-heart-o").click(function(){
 				$(this).css('color', 'tomato');
